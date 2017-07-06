@@ -1,0 +1,23 @@
+<% include ./partials/header %>  <!--one dot because login and partials are in the same directory -->
+
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Login Form</h1>
+        <div style="width: 30%; margin: 30px auto">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="username">
+                </div>
+                <div class="form-group">                
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <!--<input class="btn btn-lg btn-default btn-block btn-primary" type="submit" value="Login!"> <!-- value - what will actually show up -->
+                    <button class="btn btn-lg btn-default btn-block btn-primary" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>
